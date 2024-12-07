@@ -2,7 +2,7 @@ package api;
 
 import io.restassured.http.ContentType;
 import model.userModel.UserRequestModel;
-import model.userModel.GetUserResponseModel;
+import model.userModel.UserResponseModel;
 import model.userModel.ResponseModel;
 
 import java.util.List;
@@ -55,7 +55,7 @@ public class UserApi {
 
 
 
-    public GetUserResponseModel getUserByUserName(String userName) {
+    public UserResponseModel getUserByUserName(String userName) {
         return given().
                 contentType(ContentType.JSON)
                 .baseUri("https://petstore.swagger.io/v2")
@@ -65,7 +65,7 @@ public class UserApi {
                 .then()
                 .statusCode(200)
                 .log().all()
-                .extract().response().as(GetUserResponseModel.class);
+                .extract().response().as(UserResponseModel.class);
     }
 
     public ResponseModel getLogin(String username, String password) {

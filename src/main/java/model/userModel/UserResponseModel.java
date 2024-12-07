@@ -1,6 +1,6 @@
 package model.userModel;
 
-public class GetUserResponseModel {
+public class UserResponseModel {
     private Long id;
     private String username;
     private String firstName;
@@ -10,10 +10,10 @@ public class GetUserResponseModel {
     private String phone;
     private int userStatus;
 
-    public GetUserResponseModel() {
+    public UserResponseModel() {
     }
 
-    public GetUserResponseModel(Long id, String username, String firstName, String lastName, String email, String password, String phone, int userStatus) {
+    public UserResponseModel(Long id, String username, String firstName, String lastName, String email, String password, String phone, int userStatus) {
         this.id = id;
         this.username = username;
         this.firstName = firstName;

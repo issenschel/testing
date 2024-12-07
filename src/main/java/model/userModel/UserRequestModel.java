@@ -1,14 +1,14 @@
 package model.userModel;
 
 public class UserRequestModel {
-    public Long id;
-    public String username;
-    public String firstName;
-    public String lastName;
-    public String email;
-    public String password;
-    public String phone;
-    public int userStatus;
+    private Long id;
+    private String username;
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String password;
+    private String phone;
+    private int userStatus;
 
     public UserRequestModel(Long id, String username, String firstName, String lastName, String email, String password, String phone, int userStatus) {
         this.id = id;
